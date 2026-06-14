@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogos de Reabilitação</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:      #0d1b2a;
+    --surface: #1b2838;
+    --border:  rgba(255,255,255,0.07);
+    --accent:  #e8c547;
+    --accent2: #e05c5c;
+    --good:    #4ecdc4;
+    --text:    #f0f4f8;
+    --text2:   #7a8fa6;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  header p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 8px;
+  }
+
+  .games {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .game-btn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, transform 0.15s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .game-btn:hover {
+    border-color: var(--accent);
+    background: rgba(232, 197, 71, 0.05);
+    transform: translateY(-2px);
+  }
+
+  .game-btn:active {
+    transform: translateY(0);
+  }
+
+  .game-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    width: 48px;
+    text-align: center;
+  }
+
+  .game-info {
+    flex: 1;
+    text-align: left;
+  }
+
+  .game-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .game-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+
+  .game-arrow {
+    font-size: 1.1rem;
+    color: var(--text2);
+    transition: color 0.2s, transform 0.2s;
+    flex-shrink: 0;
+  }
+
+  .game-btn:hover .game-arrow {
+    color: var(--accent);
+    transform: translateX(4px);
+  }
+
+  footer {
+    margin-top: 52px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jogos</h1>
+  <p>Plataforma de Reabilitação · Seleciona um jogo</p>
+</header>
+
+<div class="games">
+
+  <a class="game-btn" href="claw_game%20(2).html">
+    <div class="game-icon">🦾</div>
+    <div class="game-info">
+      <div class="game-name">Garra</div>
+      <div class="game-desc">Treino de preensão · FSR calibrado</div>
+    </div>
+    <div class="game-arrow">→</div>
+  </a>
+
+  <a class="game-btn" href="catch_game_v4%20(2).html">
+    <div class="game-icon">🎯</div>
+    <div class="game-info">
+      <div class="game-name">Catch!</div>
+      <div class="game-desc">Controlo proporcional · Coordenação</div>
+    </div>
+    <div class="game-arrow">→</div>
+  </a>
+
+  <a class="game-btn" href="flappy_v4.html">
+    <div class="game-icon">🐦</div>
+    <div class="game-info">
+      <div class="game-name">Flappy</div>
+      <div class="game-desc">Controlo contínuo · Resistência</div>
+    </div>
+    <div class="game-arrow">→</div>
+  </a>
+
+</div>
+
+<footer>RehabLink · Sistema de Monitorização</footer>
+
+</body>
+</html>
